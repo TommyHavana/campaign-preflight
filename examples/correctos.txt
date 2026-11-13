@@ -1,0 +1,2 @@
+https://atelier.example/coleccion?utm_source=google&utm_medium=cpc&utm_campaign=invierno_2026
+https://atelier.example/novedades?utm_source=newsletter&utm_medium=email&utm_campaign=invierno_2026&utm_content=boton_principal

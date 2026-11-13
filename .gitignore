@@ -1,0 +1,48 @@
+# Dependencias y resultados generados
+node_modules/
+dist/
+coverage/
+test-results/
+playwright-report/
+.vite/
+*.tsbuildinfo
+
+# Configuración privada y credenciales
+.env
+.env.*
+!.env.example
+*.local
+.npmrc
+.netrc
+*.pem
+*.key
+*.p12
+*.pfx
+.aws/
+.ssh/
+credentials.json
+secrets.json
+
+# Datos y bases de datos locales
+/data/
+/backups/
+/exports/
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+*.sqlite-*
+*.sqlite3-*
+*.sql
+
+# Archivos del sistema, registros y temporales
+.DS_Store
+._*
+.idea/
+.vscode/
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+*~

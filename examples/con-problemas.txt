@@ -1,0 +1,4 @@
+https://atelier.example/coleccion?utm_source=instagram&utm_medium=paid_social&utm_campaign=Invierno_2026
+https://atelier.example/coleccion?utm_source=meta&utm_medium=paid_social
+http://atelier.example/coleccion?utm_source=linkedin&utm_medium=paid_social&utm_campaign=invierno_2026
+https://atelier.example/novedades?utm_source=newsletter&utm_medium=email&utm_campaign=invierno%202026
