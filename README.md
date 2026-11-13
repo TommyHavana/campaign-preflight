@@ -6,6 +6,8 @@ El análisis se ejecuta en el navegador. No visita las páginas de destino ni en
 
 ![Interfaz de Campaign Preflight con un lote ficticio](docs/audit-desktop.jpg)
 
+[Ver la interfaz en móvil](docs/audit-mobile.jpg)
+
 ## Funciones
 
 - Revisión de un lote de URLs HTTP/HTTPS, con una URL por línea.
@@ -27,9 +29,16 @@ No requiere claves API, variables de entorno, cuentas de terceros, backend ni ba
 
 ## Instalación y arranque
 
+Si ya tienes el proyecto en tu equipo, abre una terminal en la carpeta que contiene `package.json` y pasa directamente a `npm ci`. Para obtener una copia con Git:
+
 ```bash
 git clone https://github.com/TommyHavana/campaign-preflight.git
 cd campaign-preflight
+```
+
+Desde la carpeta del proyecto, instala las versiones fijadas y arranca la aplicación:
+
+```bash
 npm ci
 npm run dev
 ```
@@ -142,7 +151,7 @@ https://tienda.example.com/zapatillas#utm_source=boletin&utm_medium=email&utm_ca
 
 Con las reglas iniciales, el primero presenta HTTP, mayúsculas y un espacio en la campaña; el segundo omite `utm_medium`; el tercero repite `utm_source`; el cuarto coloca los UTM en el fragmento en lugar de la consulta. Los dominios `.example.com` son ficticios y no requieren visitar ninguna página para probar las reglas.
 
-Puedes copiar más lotes desde `examples/` o usar los botones de ejemplos de la interfaz. El lote mixto representa a la marca ficticia `atelier.example`: contiene seis enlaces que, con las reglas iniciales, producen dos resultados correctos, dos advertencias y dos errores.
+Puedes copiar los [enlaces correctos](examples/correctos.txt) y los [enlaces con problemas](examples/con-problemas.txt), o cargar el lote mixto desde la interfaz. Ese lote representa a la marca ficticia `atelier.example`: con las reglas iniciales, dos de sus seis enlaces quedan sin hallazgos, dos con avisos y dos con errores.
 
 ## Exportación y privacidad
 

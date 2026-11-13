@@ -1,10 +1,10 @@
 # Estado de campaign-preflight
 
-Fecha de referencia: **12 de noviembre de 2026**. Versión: **0.1.0**.
+Versión: **0.1.0**. Auditoría de la aplicación: **12 de noviembre de 2026**. Verificación del repositorio: **13 de noviembre de 2026**.
 
 ## Objetivo de esta entrega
 
-Primera versión local e independiente para revisar lotes de enlaces de marketing, configurar reglas de UTM y destinos, explicar hallazgos y exportar el informe a CSV. Todo el código se encuentra en esta carpeta. No se ha publicado ni desplegado.
+Primera versión local e independiente para revisar lotes de enlaces de marketing, configurar reglas de UTM y destinos, explicar hallazgos y exportar el informe a CSV. El código está publicado en la rama `main` del repositorio público [TommyHavana/campaign-preflight](https://github.com/TommyHavana/campaign-preflight). La aplicación se ejecuta en local.
 
 ## Alcance de la versión
 
@@ -77,4 +77,4 @@ Para utilizar el proyecto, ejecuta `npm run dev` en esta carpeta y abre `http://
 2. Añadir perfiles de reglas persistentes de forma optativa.
 3. Evaluar importación de CSV y comparación entre informes según el uso real del producto.
 
-La publicación o el despliegue quedan fuera de esta entrega y requieren una petición posterior.
+El 13 de noviembre se repitieron `npm ci`, `npm run check`, `npm run format:check` y `npm audit` para verificar el código publicado: pasaron las 91 pruebas, el chequeo de tipos, la compilación y el formato. npm no comunicó vulnerabilidades conocidas. El aviso de instalación de `fsevents` sobre su script opcional no impidió estas comprobaciones. No se desplegó la aplicación ni se añadió una licencia.
